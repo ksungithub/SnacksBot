@@ -1,0 +1,2 @@
+# SnacksBot
+Bot for Discord
