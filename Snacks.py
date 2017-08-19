@@ -87,7 +87,7 @@ async def startpl():
 	global player
 	player = await voice.create_ytdl_player(yturl2)
 	player.start()
-	player.volume = 0.01
+	player.volume = 0.09
 
 @client.command()
 async def stop():
@@ -110,9 +110,7 @@ async def roles(context):
 		result += role.name + ", " 
 	await client.say(result)
 
-
-'''@client.event
-async def guess(ctx):
+'''async def guess(ctx):
     if message.author == client.user:
         return
     await client.send_message(message.channel, 'Guess a number between 1 to 10')
